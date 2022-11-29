@@ -1,4 +1,4 @@
-const reducer = (state = 0, action) => {
+const amountReducer = (state = 0, action) => {
   if (action.type === "deposit") {
     return state + action.payload;
   } else if (action.type === "withdraw") {
@@ -8,4 +8,4 @@ const reducer = (state = 0, action) => {
   }
 };
 
-export default reducer;
+export default amountReducer;
